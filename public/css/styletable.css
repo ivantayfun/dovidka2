@@ -1,0 +1,467 @@
+*, body {
+    padding: 0;
+    margin: 0;
+}
+
+table{
+
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+table tr{
+    border-radius: 10px;
+    background-color: #E3E4E6;
+}
+
+
+body{
+    background-color: #E3E4E6;
+    width: 100%;
+}
+.two_stage{
+    box-shadow: 0 0 3px 0 black;
+    background: #98FF98;
+    font-style: italic;
+    cursor: pointer;
+}
+.one_stage{
+    box-shadow: 0 0 3px 0 black;
+    background: #FFD700;
+    font-style: italic;
+    cursor: pointer;
+}
+.out_of_stage{
+    box-shadow: 0 0 3px 0 black;
+    background: #cb1c23;
+    color: white !important;
+    font-style: italic;
+    cursor: pointer;
+}
+.all_of_stage{
+    background-color: #c0c0c0;
+    box-shadow: 0 0 3px 0 black;
+    cursor: pointer;
+}
+.all_of_stage_dovidka {
+    background-color: unset;
+    box-shadow: 0 0 3px 0 black;
+    cursor: pointer;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+}
+.fa-check-circle, .fa-plus, .fa-list-alt, .fa-exclamation-circle, .fa-power-off, .fa-file-alt, .fa-passport{
+    font-size: 34px;
+    color: white;
+}
+
+.fa-check-circle {
+    color: green !important;
+}
+
+.fa-exclamation-circle {
+    color: red;
+}
+
+.modal {
+    padding-right: 0 !important;
+}
+
+.modal-dialog {
+    max-width: 95% !important;
+}
+
+.exit {
+    position: absolute;
+    right: 10px;
+}
+
+.UserName {
+    position: absolute;
+    right: 100px;
+}
+
+a {
+    color: #212529 !important;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 60%;
+    }
+}
+
+#AdminViewsRequest .modal-dialog {
+    max-width: 87%;
+}
+
+.modal-header .close {
+    margin: -1rem -1rem -1rem -1rem;
+}
+
+.content {
+    min-height: calc(100vh - 60px - 49px);
+    height: 100%;
+}
+
+footer {
+    background-color: #001A31 !important;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: 58px;
+}
+
+footer p, h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+
+}
+
+.error {
+    box-shadow: 0 0 0 .2rem red;
+    border-color: red;
+}
+
+.login {
+    display: flex;
+
+    height: calc(100vh - 60px);
+}
+
+.login .row {
+    margin: 0 auto;
+    height: 50vh;
+    width: 25%;
+    background: url("../img/Emblem_of_the_Ukrainian_Ground_Forces.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login form input {
+    margin-top: 5px;
+}
+
+.fa-spinner, .fa-upload, .fa-toilet, .fa-toilet-paper-slash, .fa-edit {
+    font-size: 24px;
+    color: #adadad;
+}
+
+.voa img {
+    height: 75px;
+    width: 105px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.voa p {
+    color: white;
+}
+
+.showquery {
+    width: 50%;
+    left: calc(100% - 76%) !important;
+}
+
+.showquery .modal-dialog {
+    max-width: 74% !important;
+}
+
+.fa-spinner, .fa-upload, .fa-toilet, .fa-toilet-paper-slash[type="button"] {
+    -webkit-appearance: none;
+}
+
+tr[data-href]:hover {
+    cursor: pointer;
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    z-index: 9999999;
+}
+
+.preloader .spinner-grow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.subscriber .row {
+    margin-right: 0;
+}
+
+
+/* меню на скранице subscriber*/
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    left: -250px;
+    height: calc(100% - 120px);
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/*ul ul a {*/
+/*    font-size: 0.9em !important;*/
+/*    padding-left: 30px !important;*/
+/*    background: #6d7fcc;*/
+/*}*/
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sidebarCollapse {
+    position: fixed;
+    top: 35%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#sidebarCollapse:hover {
+    z-index: 2;
+}
+
+.fa-arrow-circle-up {
+    transform: rotate(180deg);
+}
+
+
+.category {
+    width: calc(100% - 250px);
+    height: calc(100% - 60px);
+    position: absolute;
+    background-color: #7386D5;
+    top: 60px;
+}
+
+.hide {
+    left: -100%;
+}
+
+.hide.active {
+    display: block;
+}
+
+/*-------------------------------*/
+
+.voa .table thead th {
+    vertical-align: middle;
+}
+
+.voa .table td {
+    vertical-align: middle !important;
+}
+
+.messages [type="button"]:not(:disabled) {
+    cursor: pointer;
+    border: none;
+}
+
+.voa_detail {
+    font-size: 18px !important;
+}
+
+.closes {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+
+.search_cat_1 {
+    width: 50%;
+    height: 300px;
+    top: 60px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    overflow: auto;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.forms-text {
+    cursor: pointer;
+}
+
+.addpostposition {
+    margin-left: 5px;
+}
+
+.addpostposition:hover {
+    background-color: blue;
+    color: white !important;
+}
+.enter{
+    right: 10px;
+    top: 10px;
+    width: 7rem;
+    font-size: 1.2rem;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-radius: unset;
+
+}
+.enter:hover{
+    color: white !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"]{
+    background-color: unset;
+}
+.dropdown-item:hover{
+    color: black !important;
+}
+.dropdown-toggle::after{
+    right: 0;
+    top: 58%;
+}
+.password {
+	position: relative;
+}
+.password-control {
+	position: absolute;
+	top: 50px;
+	right: 6px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.table > :not(:last-child) > :last-child > * {
+    border-bottom:unset;
+}
